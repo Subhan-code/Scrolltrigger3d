@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+:root {
+    --color-accent: rgb(230, 170, 40);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+.archivo-black-regular {
+    color: aliceblue;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit; /* Ensures the image covers the container without being stretched */
+}
+.MA{
+    font-size: larger;
+    font-weight: bolder; /* Made font bolder */
+}
+a, p {
+    color: var(--color-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px; /* Increased font size */
+    font-weight: bolder; /* Made font bolder */
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5em 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em; /* Added gap */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5em 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em; /* Added gap */
+}
+nav > div {
+    flex: 1;
+}
+.links-1 {
+    display: flex;
+    gap: 2em;
+}
+.links-2 {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo a {
+    font-family: "Archivo Black"; /* Changed font family */
+    font-size: 25px; /* Increased font size */
+    font-weight: 400; /* Changed font weight */
+    letter-spacing: 0.02em;
+    text-transform: uppercase; /* Ensured text is uppercase */
+}
+.container {
+    width: 100%;
+    height: 2000vh;
+}
+.active-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.35;
+    z-index: -1;
+}
+.active-slide img {
+    position: absolute;
+    filter: blur(50px);
+    transform: scale(1.125);
+}
+.slider {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 750px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+.slide-copy p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px; /* Increased font size */
+    font-weight: bolder; /* Made font bolder */
+    line-height: 150%;
+    color: white;
+    gap: 1em; /* Added gap */
+}
+.slide-img{
+    object-fit: fill;
+}
+.slide-copy p#index {
+    font-size: 12px;
+    font-weight: bolder; /* Made font bolder */
+    margin-bottom: 0.75em;
+}
+#slide-1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-22500px);
+    opacity: 0;
+}
+#slide-2 {
+    position: absolute; 
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-20000px);
+    opacity: 0; 
+}
+#slide-3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-17500px);
+    opacity: 0;
+}
+#slide-4 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-15000px);
+    opacity: 0;
+}
+#slide-5 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-12500px);
+}
+#slide-6 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-10000px);
+}
+#slide-7 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-7500px);
+    opacity: 0;
+}
+#slide-8 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-5000px);
+    opacity: 0;
+}
+#slide-9 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-50%) translateZ(-2500px);
+    opacity: 0.5; 
+}
+#slide-10 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%) translateZ(0px);
+    opacity: 1;
+}
